@@ -1,0 +1,5 @@
+﻿#My configurations:
+*.idea
+nbproject
+unpackage
+.project
