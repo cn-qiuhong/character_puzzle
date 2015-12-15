@@ -716,15 +716,15 @@ var Tina = function (ops) {
 		});
 
 		//帧率，单帧时间，内存
-		//if (T.Stats) {
-		//	console.log('******** Status *******');
-		//	T.stats = new T.Stats();
-		//	T.stats.setMode(0);
-		//	T.stats.domElement.style.position = 'absolute';
-		//	T.stats.domElement.style.left = '0px';
-		//	T.stats.domElement.style.top = '0px';
-		//	document.body.appendChild(T.stats.domElement);
-		//}
+		if (T.Stats) {
+			console.log('******** Status *******');
+			T.stats = new T.Stats();
+			T.stats.setMode(0);
+			T.stats.domElement.style.position = 'absolute';
+			T.stats.domElement.style.left = '0px';
+			T.stats.domElement.style.top = '0px';
+			document.body.appendChild(T.stats.domElement);
+		}
 
 		return T;
 	};
